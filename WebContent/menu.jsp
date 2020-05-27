@@ -22,14 +22,14 @@
 			<c:choose>
 				<c:when test="${empty sessionId}">
 				
-			<li class="nav-item"><a class="nav-link" href="<c:url value="/member/loginMember.jsp"/>">로그인</a></li>
-			<li class="nav-item"><a class="nav-link" href="<c:url value="/member/addMember.jsp"/>">회원가입</a></li>
+			<li class="nav-item"><a class="nav-link" href="<c:url value="/loginMember.jsp"/>">로그인</a></li>
+			<li class="nav-item"><a class="nav-link" href="<c:url value="/addMember.jsp"/>">회원가입</a></li>
 			</c:when>
 			
 			<c:otherwise>
 			<li style="padding-top: 7px; color: white">[<%=sessionId %>님]</li>
-			<li class="nav-item"><a class="nav-link" href="<c:url value="/member/logoutMember.jsp"/>">로그아웃</a></li>
-			<li class="nav-item"><a class="nav-link" href="<c:url value="/member/updateMember.jsp"/>">회원수정</a></li>
+			<li class="nav-item"><a class="nav-link" href="<c:url value="/logoutMember.jsp"/>">로그아웃</a></li>
+			<li class="nav-item"><a class="nav-link" href="<c:url value="/updateMember.jsp"/>">회원수정</a></li>
 			</c:otherwise>
 			</c:choose>
 			
